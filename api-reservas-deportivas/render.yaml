@@ -4,8 +4,9 @@ services:
   - type: web
     name: api-reservas-deportivas
     runtime: docker
-    dockerfilePath: ./api-reservas-deportivas/Dockerfile
-    dockerContext: ./api-reservas-deportivas
+    rootDir: ./api-reservas-deportivas
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     plan: free
     healthCheckPath: /salud
     envVars:
